@@ -19,16 +19,16 @@ import com.example.service.CustomerServiceImpl;
 @ComponentScan({"com.example"})
 public class AppConfig {
 
-	@Bean(name="customerService")
-	public CustomerService getCustomerService() {
-		//CustomerServiceImpl customerService = new CustomerServiceImpl();
-		//customerService.setCustomerRepository(getCustomerRepository());
-		//return customerService;
-		return new CustomerServiceImpl();
-	}
-	
-	@Bean(name="customerRepository")
-	public CustomerRepository getCustomerRepository() {
-		return new HibernateCustomerRepositoryImpl();
-	}
+//	@Bean(name="customerService")
+//	public CustomerService getCustomerService() {
+//		//CustomerServiceImpl customerService = new CustomerServiceImpl();
+//		//customerService.setCustomerRepository(getCustomerRepository());
+//		//return customerService;
+//		return new CustomerServiceImpl();
+//	}
+//	
+//	@Bean(name="customerRepository")
+//	public CustomerRepository getCustomerRepository() {
+//		return new HibernateCustomerRepositoryImpl();
+//	}
 }
