@@ -19,7 +19,7 @@ import com.example.repository.CustomerRepository;
 public class CustomerServiceImpl implements CustomerService {
 
 	/** member level injection*/
-//	@Autowired
+	@Autowired
 	private CustomerRepository customerRepository;
 	
 //	public CustomerServiceImpl() {
