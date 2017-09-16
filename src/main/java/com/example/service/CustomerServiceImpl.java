@@ -18,26 +18,10 @@ import com.example.repository.CustomerRepository;
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService {
 
-	/** member level injection*/
+	/** member level injection and auto wiring*/
 	@Autowired
 	private CustomerRepository customerRepository;
 	
-//	public CustomerServiceImpl() {
-//	}
-	
-	/** constructor level injection*/
-//	@Autowired
-//	public CustomerServiceImpl( CustomerRepository customerRepository) {
-//		this.customerRepository = customerRepository;
-//	}
-	
-	/** setter level injection*/
-//  1. used for setter injection when using xml config 
-//  2. OR @Autowired for setter level injection	
-	public void setCustomerRepository(CustomerRepository customerRepository) {
-		this.customerRepository = customerRepository;
-	}
-
 	/* (non-Javadoc)
 	 * @see com.example.service.CustomerService#findAll()
 	 */
